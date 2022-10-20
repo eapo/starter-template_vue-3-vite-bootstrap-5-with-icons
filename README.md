@@ -124,7 +124,7 @@ npm install -D @vue/compiler-sfc
 3. Инсталиране на Vue CLI
 
 ```sh
-npm install -g @vue/cli
+sudo npm install -g @vue/cli
 ```
 
 ### Packages
@@ -142,7 +142,7 @@ npm install -g @vue/cli
 1. Започваме с инициализация на проекта ни с **Vite** темплейт. За целта в конзолата напишете:
 
 ```sh
-npm init @vitejs/app
+npm create vite@latest
 ```
 
 2. В следващите стъпки окажете следните данни:
@@ -152,11 +152,19 @@ Project name: vue3-bootstrap5-boilerplate
 ```
 
 ```sh
-Select a framework: vue
+Select a framework: › Vue
+Select a variant: › Customize with create-vue
 ```
 
 ```sh
-Select a variant: vue
+✔ Add TypeScript? … No / Yes // Your choice
+✔ Add JSX Support? … No / Yes // Your choice
+✔ Add Vue Router for Single Page Application development? … Yes
+✔ Add Pinia for state management? … No / Yes // Recommended
+✔ Add Vitest for Unit Testing? … No / Yes // Recommended
+✔ Add Cypress for End-to-End testing? … No / Yes // Only on x64 or arm64
+✔ Add ESLint for code quality? … No / Yes // Recommended
+✔ Add Prettier for code formatting? … No / Yes // Recommended
 ```
 
 3. Отидете в директорията на новосъздадения проект:
@@ -171,14 +179,6 @@ cd vue3-bootstrap5-boilerplate
 
 ```sh
 code .
-```
-
-#### Vue router
-
-За инсталацията можете да видите информация на адрес: https://next.router.vuejs.org/installation.html
-
-```sh
-npm install vue-router@4
 ```
 
 #### Bootstrap 5, Bootstrap Icons and Proper
@@ -204,6 +204,9 @@ npm i @popperjs/core
 #### Sass
 
 Последно, но не и по значение, добавяме поддръжката на **Sass**. Използвам го само по време на разработката и затова го добавяме, като `--save-dev` към темплейта.
+    > [**EN**]
+    >
+    > Adding **Sass** support to the template. I only use it during development: `--save-dev`.
 
 ```sh
 npm install sass --save-dev
@@ -212,6 +215,9 @@ npm install sass --save-dev
 ### Install and Run
 
 Приключи инициализацията на темплейта и остана да заредим всички модули и да го стартираме. В конзолата изпълняваме последователно:
+    > [**EN**]
+    >
+    > The initialization of the template is finished. Load all the modules and run it sequentially:
 
 ```sh
 npm install
@@ -222,14 +228,23 @@ npm run dev
 ```
 
 Ще се зареди стартовия проект **Hello Vue 3 + Vite** на http://localhost:3000/
+    > [**EN**]
+    >
+    > The **Hello Vue 3 + Vite** project will load on http://localhost:3000/
 
 ## Boilerplate
 
 ### Clear project
 
 **Vite** добавя към проекта няколко неща, които няма да са ни нужни.
+    > [**EN**]
+    >
+    > **Vite** adds a few things to the project that we won't need.
 
 Най-напред отворете файла `/src/App.vue` и премахнете ненужното съдържание, докато придобие следния вид:
+    > [**EN**]
+    >
+    > First, open the `/src/App.vue` file and remove the unnecessary content until it looks like this:
 
 ```vue
 <template></template>
@@ -241,6 +256,9 @@ npm run dev
 ### Get Boilerplate files
 
 Време е да спрем с писаниците и да вземем малко наготово кода, който съм добавил в [GitHub репозиторито на проекта](https://github.com/howbizarre/starter-template_vue-3-vite-bootstrap-5-with-icons/releases). Това, което ви е необходимо е всичко в папката `/src` и правите Copy & Replace във вашата `/src` папка.
+    > [**EN**]
+    >
+    > Time to stop writing and get some code ready, which I've added to the [project's GitHub repository](https://github.com/howbizarre/starter-template_vue-3-vite-bootstrap-5-with-icons/releases). What you need is everything in `/src` folder and you do Copy & Replace to your `/src` folder.
 
 **И това е всикчо приятели.**
 
